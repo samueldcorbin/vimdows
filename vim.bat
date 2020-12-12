@@ -6,4 +6,3 @@ if "%~1" == "" (
 ) else (
     wt -p "%wsl-profile-name%" --title "%~nx1" wsl bash --login -c 'cd "$(wslpath '\''%~dp1'\'')" ^&^& vim "$(wslpath '\''%~1'\'')" '
 )
-pause
