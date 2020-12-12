@@ -4,9 +4,9 @@ A small batch file for opening Windows files in WSL vim.
 
 Setting this as the default program for a file type (**Properties -> Opens with -> Change**) enables you to easily use your WSL's vim as your editor in Windows. It also works from the Windows command line.
 
-Requires WSL 2 and Windows Terminal.
+Requires Windows Terminal and WSL 2 (with bash and vim installed).
 
-Edit *default-save-location* to change the working directory for vim when no file is provided (otherwise the working directory is wherever the opened file resides).
+Edit *default-save-location* to change the working directory for vim when no file is provided (default: user's Desktop) and *wsl-profile-name* to specify which Windows Terminal profile you would like to use (default: "Ubuntu").
 
 If using as the default "Opens with" on windows, Nirsoft's [FileTypesMan](http://www.nirsoft.net/utils/file_types_manager.html) provides an easy way to change the icon associated with the file types (since the Windows GUI doesn't allow changing icons of batch script files).
 
